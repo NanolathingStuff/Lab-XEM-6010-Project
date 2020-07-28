@@ -15,6 +15,10 @@ end Maintenence;
 
 architecture Maintenence_behavior of Maintenence is
 --signals
+--component Enabler_generator is
+--    port(Reset_out: out std_logic);
+--end component;	-- depreated
+--signal Enabler: std_logic;
 
 begin
 
@@ -32,5 +36,7 @@ begin
        	end if;       
       
       end process; 
+
+-- cpt1: Enabler_generator port map(Enabler);
 
 end Maintenence_behavior;
