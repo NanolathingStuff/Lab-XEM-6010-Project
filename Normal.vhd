@@ -3,53 +3,41 @@
 --	Standby = R,G off, Y pulsing 1 every 2ns
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
-use work.all;
 
-entity Normal is 
- port(	Enabler, Mode: in std_logic;
+entity Normal is
+port(	Mode: in std_logic;
 	LR, LY, LG: out std_logic);
 end Normal;
 
-architecture Normal_behav of Normal is
+architecture Normal_behavior of Normal is
 
-component Enabler_generator is
-    port(Reset_out: out std_logic);
+component Standby is 
+ 	port(LR, LY, LG: out std_logic);
 end component;
 
+component Nominal is 
+ 	port(LR, LY, LG: out std_logic);
+end component;
+
+signal NR, NY, NG, SR, SY, SG: std_logic; --ComponentLight
+
 begin
 
-process(Enabler, Mode)
+process(Mode)
 begin
-	if Enabler = '1' then
-		if Mode = '0' then --NOMINAL
-			LG <= '0';
-			LY <= '0';
-			LR <= '1';
-			wait 3 ns;
-			LR <= '0';
-			LG <= '1';
-			wait 3 ns;
-			LY <= '1';
-			wait 2 ns;
-			LY <= '0';
-			LG <= '0';
-		else	if Mode = '1' --STANDBY
-			LG <= '1';
-			LY <= '1';
-			LR <= '1';
-			wait 1 ns;
-			LG <= '0';
-			LY <= '0';
-			LR <= '0';
-			wait 2 ns;
-		end if;
-	else
-		LG <= '0';
-		LY <= '0';
-		LR <= '0';
-
+	if Mode = '1' then --Standby
+		LR <= SR;
+		LY <= SY;
+		LG <= SG;
+	else	--Nominal
+		LR <= NR;
+		LY <= NY;
+		LG <= NG;
+	end if;
+		
 end process;
 
+cptS: Standby port map(SR, SY, SG);
+cptN: Nominal port map(NR, NY, NG);
 
-end Normal_behav;
+end Normal_behavior;

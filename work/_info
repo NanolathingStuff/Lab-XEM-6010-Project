@@ -21,9 +21,9 @@ VVBE=;M3Y3kih<o2nn>o4S3
 !s100 Q3Fm`I@PfN39<=U?oVQzg3
 Z6 OP;C;10.4a;61
 32
-Z7 !s110 1595929876
+Z7 !s110 1596279425
 !i10b 1
-Z8 !s108 1595929876.000000
+Z8 !s108 1596279424.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/clk_generator.vhd|
 Z10 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/clk_generator.vhd|
 !i113 1
@@ -90,24 +90,46 @@ R21
 !i113 1
 R11
 R12
-Eenabler_generator
-Z22 w1595691758
+Eenabler
+w1596034571
+R15
 R1
 R2
 R3
-Z23 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/Enabler.vhd
-Z24 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/Enabler.vhd
+Z22 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/Enabler.vhd
+Z23 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/Enabler.vhd
+l0
+L8
+V^ab;=@1V^nV]PD4=5PFgm1
+!s100 5dnac<A[0fmTZK^FGiQ3b3
+R6
+32
+Z24 !s110 1596279427
+!i10b 1
+Z25 !s108 1596279426.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/Enabler.vhd|
+Z27 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/Enabler.vhd|
+!i113 1
+R11
+R12
+Eenabler_generator
+Z28 w1595691758
+R1
+R2
+R3
+R22
+R23
 l0
 L4
 VBS8<VX[cUWo1jRjDcmETj0
 !s100 i5[ZS37FkVKb0:i6><=EU2
 R6
 32
-Z25 !s110 1595926130
+Z29 !s110 1595926130
 !i10b 1
-Z26 !s108 1595926130.000000
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/Enabler.vhd|
-Z28 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/Enabler.vhd|
+Z30 !s108 1595926130.000000
+R26
+R27
 !i113 1
 R11
 R12
@@ -121,21 +143,21 @@ VY6J8NkjTKDZ^1]4nWU[9X2
 !s100 lbgNLG<4ngl?<QI_j?<7R1
 R6
 32
-R25
+R29
 !i10b 1
+R30
 R26
 R27
-R28
 !i113 1
 R11
 R12
 Ehalfadder
-Z29 w1590586879
+Z31 w1590586879
 R1
 R2
 R3
-Z30 8C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/halfadder.vhd
-Z31 FC:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/halfadder.vhd
+Z32 8C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/halfadder.vhd
+Z33 FC:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/halfadder.vhd
 l0
 L4
 VGkjfESbe7nSf7bD`;O?RF0
@@ -145,8 +167,8 @@ R6
 R18
 !i10b 1
 R19
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/halfadder.vhd|
-Z33 !s107 C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/halfadder.vhd|
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/halfadder.vhd|
+Z35 !s107 C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/halfadder.vhd|
 !i113 1
 R11
 R12
@@ -163,20 +185,20 @@ R6
 R18
 !i10b 1
 R19
-R32
-R33
+R34
+R35
 !i113 1
 R11
 R12
 Elights
-Z34 w1595856859
+Z36 w1595856859
 R14
 R15
 R1
 R2
 R3
-Z35 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/lights.vhd
-Z36 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/lights.vhd
+Z37 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/lights.vhd
+Z38 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/lights.vhd
 l0
 L7
 VfaQBSC]GA7H[aHA3ziSZ:1
@@ -185,9 +207,9 @@ R6
 32
 R7
 !i10b 1
-R8
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/lights.vhd|
-Z38 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/lights.vhd|
+Z39 !s108 1596279425.000000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/lights.vhd|
+Z41 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/lights.vhd|
 !i113 1
 R11
 R12
@@ -196,7 +218,7 @@ R14
 R15
 R1
 R2
-Z39 DEx4 work 6 lights 0 22 faQBSC]GA7H[aHA3ziSZ:1
+Z42 DEx4 work 6 lights 0 22 faQBSC]GA7H[aHA3ziSZ:1
 l23
 L12
 VR_aN=FoX7B[>McbkkT2<e0
@@ -205,9 +227,9 @@ R6
 32
 R7
 !i10b 1
-R8
-R37
-R38
+R39
+R40
+R41
 !i113 1
 R11
 R12
@@ -217,7 +239,7 @@ R14
 R15
 R1
 R2
-R39
+R42
 8C:/Users/silva/Desktop/XEM 6010 N10/Maintenence.vhd
 FC:/Users/silva/Desktop/XEM 6010 N10/Maintenence.vhd
 l20
@@ -234,15 +256,15 @@ R6
 !i113 1
 R11
 R12
-Z40 dC:/Users/silva/Desktop/XEM 6010 N10
+Z43 dC:/Users/silva/Desktop/XEM 6010 N10
 Emaintenence
-Z41 w1595929830
+Z44 w1596034447
 R15
 R1
 R2
 R3
-Z42 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/Maintenence.vhd
-Z43 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/Maintenence.vhd
+Z45 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/Maintenence.vhd
+Z46 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/Maintenence.vhd
 l0
 L10
 VQZPkeGEf5MemUgGgJP9El1
@@ -251,9 +273,9 @@ R6
 32
 R7
 !i10b 1
-R8
-Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/Maintenence.vhd|
-Z45 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/Maintenence.vhd|
+R39
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/Maintenence.vhd|
+Z48 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/Maintenence.vhd|
 !i113 1
 R11
 R12
@@ -264,15 +286,15 @@ R2
 DEx4 work 11 maintenence 0 22 QZPkeGEf5MemUgGgJP9El1
 l23
 L16
-VoamC>f88JTd7;dzc[EcHa0
-!s100 SFD4=f;:1YjGZCA8`[dfD1
+VOC_G6QcGo>8i=IYJ=mZ:A0
+!s100 h?=4Zz<bYQg48nB=9>RE>0
 R6
 32
 R7
 !i10b 1
-R8
-R44
-R45
+R39
+R47
+R48
 !i113 1
 R11
 R12
@@ -282,7 +304,7 @@ R14
 R15
 R1
 R2
-R40
+R43
 8C:/Users/silva/Desktop/XEM 6010 N10/ModalityManager.vhd
 FC:/Users/silva/Desktop/XEM 6010 N10/ModalityManager.vhd
 l0
@@ -300,25 +322,25 @@ R6
 R11
 R12
 Emanager
-Z46 w1595689528
+Z49 w1595689528
 R14
 R15
 R1
 R2
 R3
-Z47 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd
-Z48 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd
+Z50 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd
+Z51 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd
 l0
 L7
 VjPSRdVP[HR9CUEJboI9eX2
 !s100 VLfJ_kRL]joJTL^XL:dFC0
 R6
 32
-R7
+Z52 !s110 1596279426
 !i10b 1
-R8
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd|
-Z50 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd|
+R39
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd|
+Z54 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd|
 !i113 1
 R11
 R12
@@ -334,33 +356,91 @@ VHnk_BbQOc[l2]E;bN_8HQ1
 !s100 eHS3^bbOS`kg9V_K_N];M1
 R6
 32
-R7
+R52
 !i10b 1
-R8
-R49
-R50
+R39
+R53
+R54
 !i113 1
 R11
 R12
-Enormal
-w1595693080
+Enominal
+Z55 w1596278074
 R15
 R1
 R2
 R3
-Z51 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/Normal.vhd
-Z52 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/Normal.vhd
+Z56 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd
+Z57 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd
 l0
 L9
-VeWKbiAH]<fi7<zU]iCLe30
-!s100 D_Jj7UnCmnlQHgo_:nj>n1
+VlDJU_8WM6XPK_6@O9ZML50
+!s100 P_OiNeaT3<X[AkHAic>Ul2
 R6
 32
-R7
+R24
+!i10b 1
+Z58 !s108 1596279427.000000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd|
+Z60 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd|
+!i113 1
+R11
+R12
+Anominal_behav
+R15
+R1
+R2
+DEx4 work 7 nominal 0 22 lDJU_8WM6XPK_6@O9ZML50
+l19
+L13
+V3gk?:BDnS5hUzQe@5U9?l3
+!s100 @`CaS4;zZf549im?E>_2R0
+R6
+32
+R24
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R11
+R12
+Enormal
+Z61 w1596279344
+R1
+R2
+R3
+Z62 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/Normal.vhd
+Z63 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/Normal.vhd
+l0
+L7
+Vc4]WD3Dm8IgT?;JFHR3Ta0
+!s100 O>]fj]7akNmFoV^n=lkIX0
+R6
+32
+Z64 !s110 1596279424
 !i10b 1
 R8
-Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/Normal.vhd|
-Z54 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/Normal.vhd|
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/Normal.vhd|
+Z66 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/Normal.vhd|
+!i113 1
+R11
+R12
+Anormal_behavior
+R1
+R2
+DEx4 work 6 normal 0 22 c4]WD3Dm8IgT?;JFHR3Ta0
+l24
+L12
+VBKANRVMUfDImjo9:LbaVB1
+!s100 ZLbIG7ZMFJj9Y6bBd?1ci0
+R6
+32
+R64
+!i10b 1
+R8
+R65
+R66
 !i113 1
 R11
 R12
@@ -378,58 +458,99 @@ R6
 !s110 1595692173
 !i10b 1
 !s108 1595692173.000000
-R53
-R54
+R65
+R66
 !i113 1
 R11
 R12
-w1595692916
-Etb_controls
-Z55 w1595929952
+w1596034205
+Estandby
+Z67 w1596277328
+R15
 R1
 R2
 R3
-Z56 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd
-Z57 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd
+Z68 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd
+Z69 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd
+l0
+L9
+V395ZL]`C`EMN210T7I<>o3
+!s100 fJ2bBhCQQOEZ6^B=^25k`3
+R6
+32
+R24
+!i10b 1
+R58
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd|
+Z71 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd|
+!i113 1
+R11
+R12
+Astandby_behav
+R15
+R1
+R2
+DEx4 work 7 standby 0 22 395ZL]`C`EMN210T7I<>o3
+l15
+L13
+V@3AH:3E=k0BdUDgIE9f_B2
+!s100 jSH]=gTR;9;j`O6b@72j90
+R6
+32
+R24
+!i10b 1
+R58
+R70
+R71
+!i113 1
+R11
+R12
+Etb_controls
+Z72 w1596279471
+R1
+R2
+R3
+Z73 8C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd
+Z74 FC:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd
 l0
 L4
 VKaf=1`XYBihgH=FX12lZg3
 !s100 06Pi1Pz5mnR6SCAdd3<161
 R6
 32
-Z58 !s110 1595929965
+Z75 !s110 1596279476
 !i10b 1
-Z59 !s108 1595929965.000000
-Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd|
-Z61 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd|
+Z76 !s108 1596279475.000000
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd|
+Z78 !s107 C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd|
 !i113 1
 R11
 R12
 Atb_controls_behavior
 R1
 R2
-DEx4 work 11 tb_controls 0 22 Kaf=1`XYBihgH=FX12lZg3
-l19
+Z79 DEx4 work 11 tb_controls 0 22 Kaf=1`XYBihgH=FX12lZg3
+l24
 L7
-VCHP7L7?F>94:AI6Wm3gE83
-!s100 bNSMz32Fnll:a[K6i=he:3
+V@dF65AVQD?L2dAFTKFj2S0
+!s100 ng<XW8F>91k20I4oOf00<3
 R6
 32
-R58
+R75
 !i10b 1
-R59
-R60
-R61
+R76
+R77
+R78
 !i113 1
 R11
 R12
 Etb_half_adder
-Z62 w1590593293
+Z80 w1590593293
 R1
 R2
 R3
-Z63 8C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/tb_halfadder.vhd
-Z64 FC:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/tb_halfadder.vhd
+Z81 8C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/tb_halfadder.vhd
+Z82 FC:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/tb_halfadder.vhd
 l0
 L4
 V1kIA6UI_C_3^4T?IfZBjP3
@@ -438,9 +559,9 @@ R6
 32
 R18
 !i10b 1
-R8
-Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/tb_halfadder.vhd|
-Z66 !s107 C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/tb_halfadder.vhd|
+Z83 !s108 1595929876.000000
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/tb_halfadder.vhd|
+Z85 !s107 C:/Modeltech_pe_edu_10.4a/examples/Esercizi_VHDL/ADDER_VHDL/tb_halfadder.vhd|
 !i113 1
 R11
 R12
@@ -456,9 +577,9 @@ R6
 32
 R18
 !i10b 1
-R8
-R65
-R66
+R83
+R84
+R85
 !i113 1
 R11
 R12

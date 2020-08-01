@@ -22,19 +22,43 @@ architecture Maintenence_behavior of Maintenence is
 
 begin
 
-process(Enabler, Red, Yellow)
+YR: process(Enabler, Red, Yellow)
         variable Y: std_logic_vector(2 downto 0):=(others => '0');
-begin
-         
-	if Enabler /= '0' then
-		LR <= '1';
-		--TOEND
-	else
-         	LG <= '0';
+begin 	
+		--TOEND      
+	if Enabler = '1' then
+		--LR <= '1';
+		if Red /= '0' then --Red blink 6
+			if Yellow(0) = '0' then --Yellow blink twice red
+			LY <= '1';
+			--else
+				--if Yellow = '01' then --Yellow blink with red
+					
+				--else	--Yellow blink half as red (count 11 == 10)
+			--LY <= '0';
+				--end if;
+			end if;
+		else	--Red blink 0.5
+			LR <= '0';
+
+			LY <= '0';
+		end if;
+	else	-- off
 		LY <= '0';
 		LR <= '0';
        	end if;       
       
+      end process; 
+
+Green: process(Enabler)
+begin
+	if Enabler = '1' then
+		LG <= '1';
+		-- wait for 500 ps;
+		LG <= '0';
+	else	-- off
+		LG <= '0';
+	end if;       
       end process; 
 
 -- cpt1: Enabler_generator port map(Enabler);
