@@ -6,23 +6,33 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
 use work.all;
 
-entity Standby is 
+entity Nominal is 
  port(LR, LY, LG: out std_logic);
-end Standby;
+end Nominal;
 
-architecture Standby_behav of Standby is
+architecture Nominal_behav of Nominal is
+
+--component Enabler_generator is
+--    port(Reset_out: out std_logic);
+--end component;
 
 begin
-
-	LR <= '0';
-	LG <= '0';
 
 process
 begin
-	LY <= '1';
-	wait for 1 ns;
+	LG <= '0';
 	LY <= '0';
+	LR <= '1';
+	wait for 3 ns;
+	LR <= '0';
+	LG <= '1';
+	wait for 3 ns;
+	LY <= '1';
 	wait for 2 ns;
+	LY <= '0';
+	LG <= '0';
+		
 end process;
 
-end Standby_behav;
+
+end Nominal_behav;

@@ -3,6 +3,7 @@
 --	Standby = R,G off, Y pulsing 1 every 2ns
 library ieee;
 use ieee.std_logic_1164.all;
+use work.all;
 
 entity Normal is
 port(	Mode: in std_logic;

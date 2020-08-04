@@ -20,9 +20,9 @@ begin
 process
 begin
 	LY <= '1';
-	wait for 1 ns;
+	wait for 10 ns;
 	LY <= '0';
-	wait for 2 ns;
+	wait for 20 ns;
 end process;
 
 end Standby_behav;

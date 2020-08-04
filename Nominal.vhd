@@ -23,12 +23,12 @@ begin
 	LG <= '0';
 	LY <= '0';
 	LR <= '1';
-	wait for 3 ns;
+	wait for 30 ns;
 	LR <= '0';
 	LG <= '1';
-	wait for 3 ns;
+	wait for 30 ns;
 	LY <= '1';
-	wait for 2 ns;
+	wait for 20 ns;
 	LY <= '0';
 	LG <= '0';
 		

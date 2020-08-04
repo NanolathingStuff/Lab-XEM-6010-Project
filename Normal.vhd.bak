@@ -22,13 +22,6 @@ end component;
 signal NR, NY, NG, SR, SY, SG: std_logic; --ComponentLight
 
 begin
----TEST
-process
-begin
-	Mode <= '0'; wait for 10 ns;
-	Mode <= '1'; wait for 10 ns;
-end process;
--- end test
 
 process(Mode)
 begin

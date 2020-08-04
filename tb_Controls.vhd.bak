@@ -39,6 +39,7 @@ enabler: process
 
 signals: process --intervals invented to be "as random as possible"
        begin
+	Mode <= '0';
 	R <= '0'; 
 	Y(0) <= '0';
 	Y(1) <= '0';wait for 5 ns;
@@ -47,7 +48,8 @@ signals: process --intervals invented to be "as random as possible"
 	R <= '1'; 
 	Y(0) <= '1'; Y(1) <= '0';--Y <= '01';
 	wait for 20 ns;  
-	Y(0) <= '1'; Y(1) <= '1';--Y <= '11'; 
+	Y(0) <= '1'; Y(1) <= '1';--Y <= '11';
+	Mode <= '1'; 
 	wait for 10 ns;
 -- attack Y & R
    end process;
