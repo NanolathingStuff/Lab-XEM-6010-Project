@@ -18,8 +18,8 @@ begin
 
 funct: process
 begin
-	Mode <= '0'; wait for 200 ns;	--every 50ns
-	Mode <= '1'; wait for 200 ns;	--every 600ns
+	Mode <= '0'; wait for 1 us;	--every 50ns
+	Mode <= '1'; wait for 1 us;	--every 600ns
 end process;
 
 cpt: Mod5 port map(Mode, L1, L2);

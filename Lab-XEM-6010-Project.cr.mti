@@ -33,6 +33,16 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity Lights
 -- Compiling architecture Lights_behavior of Lights
 
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_counter
+-- Compiling architecture tb_counter_behavior of tb_counter
+** Warning: C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter.vhd(47): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+
+
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -49,7 +59,28 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package std_logic_arith
 -- Compiling entity Enabler
 
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Custom_counter
+-- Compiling architecture counter_behavior of Counter2_VHDL
+-- Loading entity Counter2_VHDL
+** Error: C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd(25): (vcom-1136) Unknown identifier "Input".
+
+** Error: C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd(25): Expression is not a signal.
+** Error: C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd(32): (vcom-1136) Unknown identifier "Input".
+
+** Error: C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd(32): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd(43): (vcom-1136) Unknown identifier "Mode".
+
+** Error: C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd(43): Expression is not a signal.
+** Error: C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd(48): VHDL Compiler exiting
+
+} {11.0 12.0 13.0 15.0 16.0 18.0 19.0 21.0} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -75,6 +106,14 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity Standby
 -- Compiling architecture Standby_behav of Standby
 
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Normal.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Normal.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_Normal
+-- Compiling architecture tb_Normal_behavior of tb_Normal
+
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -93,13 +132,5 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity Manager
 -- Compiling architecture ConditionManager of Manager
-
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Normal.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Normal.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_Normal
--- Compiling architecture tb_Normal_behavior of tb_Normal
 
 } {} {}}
