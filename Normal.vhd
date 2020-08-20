@@ -7,7 +7,7 @@ use work.all;
 
 entity Normal is
 port(	Mode: in std_logic;
-	LR, LY, LG: out std_logic);
+	Red, Yellow, Green: out std_logic);
 end Normal;
 
 architecture Normal_behavior of Normal is
@@ -27,13 +27,13 @@ begin
 process(Mode)
 begin
 	if Mode = '1' then --Standby
-		LR <= SR;
-		LY <= SY;
-		LG <= SG;
+		Red <= SR;
+		Yellow <= SY;
+		Green <= SG;
 	else	--Nominal
-		LR <= NR;
-		LY <= NY;
-		LG <= NG;
+		Red <= NR;
+		Yellow <= NY;
+		Green <= NG;
 	end if;
 		
 end process;

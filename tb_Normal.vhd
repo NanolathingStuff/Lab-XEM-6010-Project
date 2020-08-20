@@ -17,10 +17,10 @@ begin
 
 signals: process --intervals switching mode
        begin
-	Mode <= '0'; wait for 200 ns;	--nominal
-	Mode <= '1'; wait for 200 ns;	--standby
+	Mode <= '0'; wait for 400 ns;	--nominal
+	Mode <= '1'; wait for 400 ns;	--standby
 end process;
 
 cpt: Normal port map(Mode, L1, L2, L3);
-
+--se servissero anche gli altri componenti?
 end tb_Normal_behavior;

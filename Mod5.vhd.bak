@@ -23,17 +23,17 @@ end process;
 Red1: process
 begin
 	temp1 <= '0';
-	wait for 5 ns;
+	wait for 50 ns;
 	temp1 <= '1';
-	wait for 5 ns;	
+	wait for 50 ns;	
 end process;
 
 Red2: process
 begin
 	temp2 <= '0';
-	wait for 60 ns;
+	wait for 600 ns;
 	temp2 <= '1';
-	wait for 60 ns;	
+	wait for 600 ns;	
 end process;
 
 process(Red)

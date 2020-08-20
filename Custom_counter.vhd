@@ -13,16 +13,18 @@ use ieee.std_logic_unsigned.all;
 entity Custom_counter is 
    port( Input, Reset: in std_logic;
  	 Mode: in std_logic_vector(0 to 1);
- 	 Outp: out std_logic_vector(0 to 1));--Y, R: out std_logic ); 
+	 --Outp: out std_logic_vector(0 to 1);
+	 Y, R: out std_logic);
 end Custom_counter;
 
 architecture counter_behavior of Custom_counter is
 
 signal temp: std_logic_vector(0 to 1);
+signal tempR: std_logic_vector(0 to 1);
 
 begin   
 --handle input
-Outp <= temp;
+--Outp <= temp;
 process(Input, Reset, Mode)
 begin
 	if (rising_edge(Reset)) then --event how to?
@@ -37,6 +39,11 @@ begin
            else
               temp <= temp + 1;
            end if;
+	   if tempR="10" then
+              tempR<="00";
+           else
+              tempR <= tempR + 1;
+           end if;
         end if;
 
 --end process;
@@ -44,33 +51,34 @@ begin
 --handle output
 --process(Mode)	
 --begin	--temp: 0, 0.5, 1, 1.5
+	--take 00 as 0.5 and 11 as 2
 	--Red
---	if temp = "10" then
---			R <= '1';
---		else
---			R <= '0';
---	end if;
+	if temp = "01" then
+			R <= '1';
+		else
+			R <= '0';
+	end if;
 	--Yellow
---	if Mode = "00" then	--Y = 1/2R
---		if temp = "01" then
---			Y <= '1';
---		else
---			Y <= '0';
---		end if; 
---	else if Mode = "01" then	-- R = Y
---		if temp = "01" then
---			Y <= '1';
---		else
---			Y <= '0';
---		end if; 
---	      else		-- Y = 2R
---		if temp = "11" then
---			Y <= '1';
---		else
---			Y <= '0';
---		end if;
---	     end if;	
---	end if;
+	if Mode = "00" then	--Y = 1/2R
+		if temp = "00" or temp = "10" then
+			Y <= '1';
+		else
+			Y <= '0';
+		end if; 
+	else if Mode = "01" then	-- R = Y
+		if temp = "01" then
+			Y <= '1';
+		else
+			Y <= '0';
+		end if; 
+	      else		-- Y = 2R
+		if temp = "11" then
+			Y <= '1';
+		else
+			Y <= '0';
+		end if;
+	     end if;	
+	end if;
 	
 end process;
 

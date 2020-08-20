@@ -36,14 +36,16 @@ begin
 	wait for 600 ns;	
 end process;
 
-process(Red)
-begin
-	if Red = '1' then
-		LR <= temp2;
-	else
-		LR <= temp1;
-	end if;
-end process;
+--process(Red)
+--begin
+--	if Red = '1' then
+--		LR <= temp2;
+--	else
+--		LR <= temp1;
+--	end if;
+--end process;
+LR <= (temp2 and Red) or (temp1 and not red);
+
 ---signal temp: std_logic_vector(3 downto 0):="0000";
 --begin
 
