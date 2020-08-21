@@ -5,24 +5,33 @@ use ieee.std_logic_unsigned.all;
 use work.all;
 	 	 
 entity Lights is 
- port(	RS, YS, GS, Enable: in std_logic;	-- signal from components
-	LightR, LightG, LightV: out std_logic);
+ port(	Mode, RS, Enable, Reset: in std_logic;	-- signal from components: nominal or standby, red modulator, Enabler, reset to mod5
+	Y: in std_logic_vector(0 to 1);		-- yellow modulator
+	LightR, LightG, LightV: out std_logic);	--outputs
 end Lights;
     
 architecture Lights_behavior of Lights is
 -- signal/consts
+signal RedS, Signal5R, Signal5G: std_logic;
 -- Components
-component Maintenence is 
-port(	Enabler, Red: in std_logic;
-	Yellow: in std_logic_vector(0 to 1); 
-	LR, LY, LG: out std_logic);
-end component;
-
 --component Normal is 
 
-begin	--muy importante
--- behaviour
+component Custom_counter is 
+   port( Input, Reset: in std_logic;
+ 	 Mode: in std_logic_vector(0 to 1);
+	 Y, R: out std_logic);
+end component;
 
+component Mod5 is 
+  port(	Red: in std_logic;
+	LR, LG: out std_logic);
+end  component;
+
+begin	--muy importante
+cptM1: Mod5 port map(RedS, Signal5R, Signal5G);
+--cptM2: Custom_counter port map(INP, LR, LG);
+-- behaviour
+RedS <= RS;
 --process
 --begin
 --	LightR <= LR and Enable;
