@@ -29,11 +29,7 @@ begin
 
 	wait for 300ns;
 	enable <= '1';
-	wait for 300ns;
-	mode <= '1';
-	wait for 300ns;
-	red_switch <= '1';
-	---.....
+
 end process;
 
 end lights_behavior;

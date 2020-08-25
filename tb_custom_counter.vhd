@@ -8,7 +8,7 @@ entity tb_counter is
 architecture tb_counter_behavior of tb_counter is
 
 component Custom_counter is 
-   port( Input, Reset: in std_logic;
+   port( Input: in std_logic; --, Reset
  	 Mode: in std_logic_vector(0 to 1);
 	 --Outp: out std_logic_vector(0 to 1);
 	 Y, R: out std_logic);
@@ -26,13 +26,13 @@ component clk_generator is
 
 --signal enable, clock, reset, Clock_out: std_logic;
 --signal output: std_logic_vector(0 to 3);
-signal input, reset, Clock_out, yellow, red: std_logic; --
+signal input, Clock_out, yellow, red: std_logic; --reset,
 signal mode: std_logic_vector(0 to 1);--, ou
 
 begin
 
 --c1: Counter2_VHDL port map(enable, clock, reset, output);
-c1: Custom_counter port map (input, reset, mode, yellow, red);--, ou
+c1: Custom_counter port map (input, mode, yellow, red);--, ou
 c2: clk_generator port map (Clock_out);
 
 --clock <= Clock_out;
@@ -40,20 +40,20 @@ input<= Clock_out;
 
 process
 begin
-	Reset <= '0';
-	mode <= "00"; wait for 100 ns; --Y = 1/2R  
+	--Reset <= '0';
+	mode <= "00"; wait for 400 ns; --Y = 1/2R  
 	--mode <= "10"; wait for 100 ns; 
 	--enable <= '1'; 
-	Reset <= '1'; wait for 200 ns;  
-	Reset <= '0'; wait for 200 ns;
+	--Reset <= '1'; wait for 200 ns;  
+	--Reset <= '0'; wait for 200 ns;
 	mode <= "01"; wait for 100 ns; -- R = Y
-	mode <= "10"; wait for 300 ns;	-- Y = 2R
-	mode <= "01"; wait for 200 ns; -- R = Y
+	mode <= "10"; wait for 400 ns;	-- Y = 2R
+	mode <= "01"; wait for 300 ns; -- R = Y
 --	enable <= '0'; 
 --	Reset <= '0'; wait for 100 ns; 
-	Reset <= '1'; wait for 200 ns;  
-	Reset <= '0'; wait for 200 ns;
-	mode <= "11"; wait for 200 ns; 	-- Y = 2R
+	--Reset <= '1'; wait for 200 ns;  
+	--Reset <= '0'; wait for 200 ns;
+	mode <= "11"; wait for 300 ns; 	-- Y = 2R
 end process;
    
 

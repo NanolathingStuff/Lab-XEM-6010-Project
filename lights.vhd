@@ -17,7 +17,7 @@ signal RedS, Signal5R, Signal5G: std_logic;
 --component Normal is 
 
 component Custom_counter is 
-   port( Input, Reset: in std_logic;
+   port( Input: in std_logic;
  	 Mode: in std_logic_vector(0 to 1);
 	 Y, R: out std_logic);
 end component;
@@ -25,13 +25,21 @@ end component;
 component Mod5 is 
   port(	Red: in std_logic;
 	LR, LG: out std_logic);
-end  component;
+end component;
+
+component Normal is
+port(	Mode: in std_logic;
+	Red, Yellow, Green: out std_logic);
+end component;
 
 begin	--muy importante
 cptM1: Mod5 port map(RedS, Signal5R, Signal5G);
---cptM2: Custom_counter port map(INP, LR, LG);
+cptM2: Custom_counter port map(INP, LR, LG);
 -- behaviour
-RedS <= RS;
+RedS <= RS; --Red signal switch modulator
+
+
+LightG <= Signal5G --output green TO END
 --process
 --begin
 --	LightR <= LR and Enable;

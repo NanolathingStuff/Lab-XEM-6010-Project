@@ -11,7 +11,7 @@ use ieee.std_logic_unsigned.all;
  	
 
 entity Custom_counter is 
-   port( Input, Reset: in std_logic;
+   port( Input: in std_logic; --, Reset
  	 Mode: in std_logic_vector(0 to 1);
 	 --Outp: out std_logic_vector(0 to 1);
 	 Y, R: out std_logic);
@@ -19,17 +19,17 @@ end Custom_counter;
 
 architecture counter_behavior of Custom_counter is
 
-signal temp: std_logic_vector(0 to 1);
-signal tempR: std_logic_vector(0 to 1);
+signal temp: std_logic_vector(0 to 1):="00"; --initialize at 0 ---signal x,y,z: std_logic:='0';
+--signal tempR: std_logic_vector(0 to 1);
 
 begin   
 --handle input
 --Outp <= temp;
-process(Input, Reset, Mode)
+process(Input, Mode)--Reset,
 begin
-	if (rising_edge(Reset)) then --event how to?
-		temp <= "00";
-	end if;
+	--if (rising_edge(Reset)) then --event how to?
+	--	temp <= "00";
+	--end if;
 
 	--if(rising_edge(Input)) then
 	--if Input'event then
@@ -39,11 +39,11 @@ begin
            else
               temp <= temp + 1;
            end if;
-	   if tempR="10" then
-              tempR<="00";
-           else
-              tempR <= tempR + 1;
-           end if;
+	   --if tempR="11" then
+           --   tempR<="00";
+           --else
+            --  tempR <= tempR + 1;
+           --end if;
         end if;
 
 --end process;
@@ -53,26 +53,26 @@ begin
 --begin	--temp: 0, 0.5, 1, 1.5
 	--take 00 as 0.5 and 11 as 2
 	--Red
-	if temp = "01" then
+	if temp = "10" or temp = "00" then
 			R <= '1';
 		else
 			R <= '0';
 	end if;
 	--Yellow
 	if Mode = "00" then	--Y = 1/2R
-		if temp = "00" or temp = "10" then
-			Y <= '1';
-		else
-			Y <= '0';
-		end if; 
+		--if temp'event then--if temp = "00" or temp = "10" then
+		Y <= Input;	--Y <= '1';
+		--else
+		--	Y <= '0';
+		--end if; 
 	else if Mode = "01" then	-- R = Y
-		if temp = "01" then
+		if temp = "10" or temp = "00" then
 			Y <= '1';
 		else
 			Y <= '0';
 		end if; 
 	      else		-- Y = 2R
-		if temp = "11" then
+		if temp = "00" or temp = "01" then-- double length --if temp = "00" then
 			Y <= '1';
 		else
 			Y <= '0';

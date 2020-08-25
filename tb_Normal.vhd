@@ -7,7 +7,7 @@ end tb_Normal;
 architecture tb_Normal_behavior of tb_Normal is
 
 component Normal is 
- port(	Mode: in std_logic;
+  port(	Mode: in std_logic;
 	LR, LY, LG: out std_logic);
 end component;
 

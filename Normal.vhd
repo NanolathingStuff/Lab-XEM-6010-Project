@@ -35,7 +35,9 @@ begin
 		Yellow <= NY;
 		Green <= NG;
 	end if;
-		
+--	Red <= (SR and Mode) or (NR and not Mode);
+--	Yellow <= (SY and Mode) or (NY and not Mode);
+--	Green <= (SG and Mode) or (NG and not Mode);		
 end process;
 
 cptS: Standby port map(SR, SY, SG);
