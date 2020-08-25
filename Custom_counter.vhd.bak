@@ -72,7 +72,7 @@ begin
 			Y <= '0';
 		end if; 
 	      else		-- Y = 2R
-		if temp = "00" then
+		if temp = "00" or temp = "01" then-- double length --if temp = "00" then
 			Y <= '1';
 		else
 			Y <= '0';

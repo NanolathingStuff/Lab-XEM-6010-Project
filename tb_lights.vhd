@@ -25,14 +25,17 @@ begin
 	mode <= '0';
 	enable <= '0';
 	red_switch <= '0';
+	yellow_mod <= "00";
 	reset <= '0';
 
 	wait for 300ns;
 	enable <= '1';
+	yellow_mod <= "01";
 	wait for 300ns;
 	mode <= '1';
 	wait for 300ns;
 	red_switch <= '1';
+	yellow_mod <= "00";
 	---.....
 end process;
 

@@ -66,13 +66,13 @@ begin
 		--	Y <= '0';
 		--end if; 
 	else if Mode = "01" then	-- R = Y
-		if temp = "10" or temp = "00" then
+		if temp = "11" or temp = "01" then
 			Y <= '1';
 		else
 			Y <= '0';
 		end if; 
 	      else		-- Y = 2R
-		if temp = "00" or temp = "01" then-- double length --if temp = "00" then
+		if temp = "01" or temp = "10" then-- double length --if temp = "00" then
 			Y <= '1';
 		else
 			Y <= '0';

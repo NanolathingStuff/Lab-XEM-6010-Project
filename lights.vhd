@@ -7,12 +7,13 @@ use work.all;
 entity Lights is 
  port(	Mode, RS, Enable, Reset: in std_logic;	-- signal from components: nominal or standby, red modulator, Enabler, reset to mod5
 	Y: in std_logic_vector(0 to 1);		-- yellow modulator
-	LightR, LightG, LightV: out std_logic);	--outputs
+	LightR, LightY, LightG: out std_logic);	--outputs
 end Lights;
     
 architecture Lights_behavior of Lights is
 -- signal/consts
-signal RedS, Signal5R, Signal5G: std_logic;
+signal RedS, Signal5R, Signal5G, INP, LR, LY: std_logic;
+signal yell: std_logic_vector(0 to 1); --yellow modulator
 -- Components
 --component Normal is 
 
@@ -34,18 +35,24 @@ end component;
 
 begin	--muy importante
 cptM1: Mod5 port map(RedS, Signal5R, Signal5G);
-cptM2: Custom_counter port map(INP, LR, LG);
+cptM2: Custom_counter port map(INP, yell, LR, LY);
 -- behaviour
 RedS <= RS; --Red signal switch modulator
+INP <= Signal5R; --half-red signal
+yell <= Y; --Yellow signal switch modulator
 
 
-LightG <= Signal5G --output green TO END
+LightG <= Signal5G and Enable; --output green TO END
 --process
 --begin
 --	LightR <= LR and Enable;
 	--LightY <= LY and Enable;
 	--LightG <= LG and Enable;
 --end process;
+
+LightR <= LR and Enable; 
+LightY <= LY and Enable;
+
 
 end Lights_behavior;
 
