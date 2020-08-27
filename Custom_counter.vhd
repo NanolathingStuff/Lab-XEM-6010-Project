@@ -54,9 +54,9 @@ begin
 	--take 00 as 0.5 and 11 as 2
 	--Red
 	if temp = "10" or temp = "00" then
-			R <= '1';
-		else
 			R <= '0';
+		else
+			R <= '1';
 	end if;
 	--Yellow
 	if Mode = "00" then	--Y = 1/2R

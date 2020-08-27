@@ -38,7 +38,7 @@ begin
 	Red <= (SR and Mode) or (NR and not Mode);
 	Yellow <= (SY and Mode) or (NY and not Mode);
 	Green <= (SG and Mode) or (NG and not Mode);		
---end process;
+end process;
 
 cptS: Standby port map(SR, SY, SG);
 cptN: Nominal port map(NR, NY, NG);

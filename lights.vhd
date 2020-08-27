@@ -7,12 +7,13 @@ use work.all;
 entity Lights is 
  port(	Mode, RS, Enable, Reset: in std_logic;	-- signal from components: nominal or standby, red modulator, Enabler, reset to mod5
 	Y: in std_logic_vector(0 to 1);		-- yellow modulator
-	LightR, LightY, LightG: out std_logic);	--outputs
+	MaiR, MaiY,MaiG, NorR, NorY, NorG: out std_logic; --temp signal
+	outR, outY, outG: out std_logic);	--outputs
 end Lights;
     
 architecture Lights_behavior of Lights is
 -- signal/consts
-signal RedS, Signal5R, Signal5G, INP, LR, LY: std_logic;
+signal RedS, Signal5R, MG, INP, MR, MY, mod_n, NR, NY, NG: std_logic;
 signal yell: std_logic_vector(0 to 1); --yellow modulator
 -- Components
 --component Normal is 
@@ -34,24 +35,50 @@ port(	Mode: in std_logic;
 end component;
 
 begin	--muy importante
-cptM1: Mod5 port map(RedS, Signal5R, Signal5G);
-cptM2: Custom_counter port map(INP, yell, LR, LY);
+cptM1: Mod5 port map(RedS, Signal5R, MG);
+cptM2: Custom_counter port map(INP, yell, MY, MR);
+cprN: Normal port map(mod_n, NR, NY, NG);
 -- behaviour
 RedS <= RS; --Red signal switch modulator
 INP <= Signal5R; --half-red signal
 yell <= Y; --Yellow signal switch modulator
+mod_n <= Mode;
 
-
-LightG <= Signal5G and Enable; --output green TO END
 --process
 --begin
 --	LightR <= LR and Enable;
-	--LightY <= LY and Enable;
-	--LightG <= LG and Enable;
+	--outY <= LY and Enable;
+	--outG <= LG and Enable;
 --end process;
+	MaiR <= MR and Enable; 
+	MaiY <= MY and Enable;
+	MaiG <= MG and Enable; 
+	NorR <= NR and Enable; 
+	NorY <= NY and Enable;	
+	NorG <= NG and Enable; 
 
-LightR <= LR and Enable; 
-LightY <= LY and Enable;
+process(Mode, Reset)
+	--default = Maintenence, if Mode'event --> normal
+begin
+	if (falling_edge(Reset)) and (not mode'event)  then -- maintenence
+--	if reset = '0' then
+		outR <= MR and Enable; 
+		outY <= MY and Enable;
+		outG <= MG and Enable; 
+	--end if;  
+	else
+		if mode'event then --normal	
+			outR <= NR and Enable; 
+			outY <= NY and Enable;	
+			outG <= NG and Enable; 		
+		else	--start as maintenence
+			outG <= MG and Enable; 
+			outR <= MR and Enable; 
+			outY <= MY and Enable;
+		end if;
+	end if;
+
+end process;
 
 
 end Lights_behavior;

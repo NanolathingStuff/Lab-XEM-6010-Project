@@ -1,22 +1,10 @@
-C:/Users/silva/Desktop/Lab-XEM-6010-Project/Maintenence.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Maintenence.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Compiling entity Maintenence
--- Compiling architecture Maintenence_behavior of Maintenence
-
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd
+C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity tb_lights
 -- Compiling architecture lights_behavior of tb_lights
-** Warning: C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd(31): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd(34): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd(36): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/clk_generator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/clk_generator.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -44,7 +32,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity Lights
 -- Compiling architecture Lights_behavior of Lights
 
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter.vhd
+} {} {}} {C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter - Test.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter - Test.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -52,29 +40,13 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity tb_counter
 -- Compiling architecture tb_counter_behavior of tb_counter
 
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Controls.vhd
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity tb_Controls
--- Compiling architecture tb_Controls_behavior of tb_Controls
-
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Enabler.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Enabler.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Compiling entity Enabler
-
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_Mod5
--- Compiling architecture Mod5_Controls_behavior of tb_Mod5
+-- Compiling entity tb_counter
+-- Compiling architecture tb_counter_behavior of tb_counter
 
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -85,6 +57,14 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity Custom_counter
 -- Compiling architecture counter_behavior of Custom_counter
+
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_Mod5
+-- Compiling architecture Mod5_Controls_behavior of tb_Mod5
 
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -120,15 +100,5 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package std_logic_arith
 -- Compiling entity Nominal
 -- Compiling architecture Nominal_behav of Nominal
-
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity Manager
--- Compiling architecture ConditionManager of Manager
 
 } {} {}}

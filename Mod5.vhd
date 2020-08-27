@@ -14,9 +14,9 @@ begin
 
 green: process
 begin
-	LG <= '0';
-	wait for 50 ns;
 	LG <= '1';
+	wait for 50 ns;
+	LG <= '0';
 	wait for 50 ns;	
 end process;
 --red is half what should be
