@@ -2,6 +2,17 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
 
+
+--
+--   fs;            -- femtosecond
+--     ps  = 1000 fs; -- picosecond
+ --    ns  = 1000 ps; -- nanosecond
+ --    us  = 1000 ns; -- microsecond
+ --    ms  = 1000 us; -- millisecond
+ --    sec = 1000 ms; -- second
+ --    min = 60  sec; -- minute
+ --    hr  = 60  min; -- hour
+--
 entity Mod5 is 
  port(	Red: in std_logic;
 	LR, LG: out std_logic);

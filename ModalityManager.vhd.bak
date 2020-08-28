@@ -21,7 +21,7 @@ begin
 	if mode'event  then
 		comp <= '1';
 	end if;
-	if (falling_edge(Reset)) then
+	if ((falling_edge(Reset)) and (not mode'event)) then
 		comp <= '0';
 	end if;
 

@@ -22,6 +22,6 @@ signals: process --intervals switching mode
 	M <= '1'; wait for 400 ns;	--standby
 end process;
 
---cpt: Normal port map(M, RED, YELLOW, GREEN);
+cpt: Normal port map(M, RED, YELLOW, GREEN);
  --se servissero anche gli altri componenti?
 end tb_Normal_behavior;

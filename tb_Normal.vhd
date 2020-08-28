@@ -18,8 +18,8 @@ begin
 
 signals: process --intervals switching mode
        begin
-	M <= '0'; wait for 400 ns;	--nominal
-	M <= '1'; wait for 400 ns;	--standby
+	M <= '0'; wait for 800 ns;	--nominal
+	M <= '1'; wait for 800 ns;	--standby
 end process;
 
 cpt: Normal port map(M, RED, YELLOW, GREEN);

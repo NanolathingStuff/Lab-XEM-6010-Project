@@ -2,6 +2,17 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
 
+
+--
+--   fs;            -- femtosecond
+--     ps  = 1000 fs; -- picosecond
+ --    ns  = 1000 ps; -- nanosecond
+ --    us  = 1000 ns; -- microsecond
+ --    ms  = 1000 us; -- millisecond
+ --    sec = 1000 ms; -- second
+ --    min = 60  sec; -- minute
+ --    hr  = 60  min; -- hour
+--
 entity Mod5 is 
  port(	Red: in std_logic;
 	LR, LG: out std_logic);
@@ -14,26 +25,26 @@ begin
 
 green: process
 begin
-	LG <= '0';
-	wait for 50 ns;
 	LG <= '1';
-	wait for 50 ns;	
+	wait for 5 ns;
+	LG <= '0';
+	wait for 5 ns;	
 end process;
 --red is half what should be
 Red1: process
 begin
 	temp1 <= '0';
-	wait for 25 ns;--50 ns;
+	wait for 2500 ps;--50 ns;
 	temp1 <= '1';
-	wait for 25 ns;--50 ns;
+	wait for 2500 ps;--50 ns;
 end process;
 
 Red2: process
 begin
 	temp2 <= '0';
-	wait for 300 ns;--600 ns;
+	wait for 30 ns;--600 ns;
 	temp2 <= '1';
-	wait for 300 ns;--600 ns;
+	wait for 30 ns;--600 ns;
 end process;
 
 --process(Red)
