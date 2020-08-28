@@ -8,13 +8,15 @@ entity Lights is
  port(	Mode, RS, Enable, Reset: in std_logic;	-- signal from components: nominal or standby, red modulator, Enabler, reset to mod5
 	Y: in std_logic_vector(0 to 1);		-- yellow modulator
 	MaiR, MaiY,MaiG, NorR, NorY, NorG: out std_logic; --temp signal
+	setting: out std_logic_vector(0 to 1); --debug
 	outR, outY, outG: out std_logic);	--outputs
 end Lights;
     
 architecture Lights_behavior of Lights is
 -- signal/consts
-signal RedS, Signal5R, MG, INP, MR, MY, mod_n, NR, NY, NG: std_logic;
-signal yell: std_logic_vector(0 to 1); --yellow modulator
+signal RedS, Signal5R, MG, INP, MR, MY, NR, NY, NG,SR, SY, SG: std_logic;
+signal modN, res: std_logic;
+signal yell, set: std_logic_vector(0 to 1):= "00"; --yellow modulator
 -- Components
 --component Normal is 
 
@@ -29,54 +31,81 @@ component Mod5 is
 	LR, LG: out std_logic);
 end component;
 
-component Normal is
-port(	Mode: in std_logic;
-	Red, Yellow, Green: out std_logic);
+component Nominal is 
+ port(LR, LY, LG: out std_logic);
 end component;
+
+component Standby is 
+ port(LR, LY, LG: out std_logic);
+end component;
+
+component Manager is 
+ port(	Reset, Mode: in std_logic;
+	comp: out std_logic_vector(0 to 1):= "00"); --Component to activate (Maintenence or Normal)
+end component;--
+
 
 begin	--muy importante
 cptM1: Mod5 port map(RedS, Signal5R, MG);
 cptM2: Custom_counter port map(INP, yell, MY, MR);
-cprN: Normal port map(mod_n, NR, NY, NG);
+cptN: Nominal port map(NR, NY, NG);
+cptS: Standby port map(SR, SY, SG);
+cptMode: Manager port map(modN, res, set);
 -- behaviour
 RedS <= RS; --Red signal switch modulator
 INP <= Signal5R; --half-red signal
 yell <= Y; --Yellow signal switch modulator
-mod_n <= Mode;
-
+modN <= Mode;
+res <= Reset; 
+setting <= set;
+--mod_n <= Mode;
+--Normal: process(Mode)
+--	begin
+	
+--end process;
 --process
 --begin
 --	LightR <= LR and Enable;
 	--outY <= LY and Enable;
 	--outG <= LG and Enable;
 --end process;
+---DEBUG
 	MaiR <= MR and Enable; 
 	MaiY <= MY and Enable;
 	MaiG <= MG and Enable; 
-	NorR <= NR and Enable; 
-	NorY <= NY and Enable;	
-	NorG <= NG and Enable; 
+	NorR <= (NR and Enable and not Mode) or  (SR and Enable and Mode);
+	NorY <= (NY and Enable and not Mode) or  (SY and Enable and Mode);	
+	NorG <= (NG and Enable and not Mode) or  (SG and Enable and Mode);
 
-process(Mode, Reset)
+
+lights: process(set)
 	--default = Maintenence, if Mode'event --> normal
 begin
-	if (falling_edge(Reset)) and (not mode'event)  then -- maintenence
+--	if (falling_edge(Reset)) and (not mode'event)  then -- maintenence
 --	if reset = '0' then
+	--if (falling_edge(Reset)) or( Nom = '0' and Stand = '0')  then
+	if set = "00" or set = "11" then--maintenence
 		outR <= MR and Enable; 
 		outY <= MY and Enable;
 		outG <= MG and Enable; 
-	--end if;  
-	else
-		if mode'event then --normal	
-			outR <= NR and Enable; 
-			outY <= NY and Enable;	
-			outG <= NG and Enable; 		
-		else	--start as maintenence
-			outG <= MG and Enable; 
-			outR <= MR and Enable; 
-			outY <= MY and Enable;
-		end if;
+	end if;  
+	if set = "01" then --nominal
+--		if mode'event then --normal	
+--	if Nom = '1' and Nom'event then 
+
+		outR <= NR and Enable; 
+		outY <= NY and Enable;	
+		outG <= NG and Enable; 	
+		--Stand <= '0'; --when one is up, the other is down: simulate button-switch	
+--		else	--start as maintenence
 	end if;
+--	if Stand = '1' and Stand'event then 
+	if set = "10" then --standby
+		outG <= SG and Enable; 
+		outR <= SR and Enable; 
+		outY <= SY and Enable;
+	end if;
+--end if;
 
 end process;
 

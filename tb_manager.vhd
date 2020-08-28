@@ -10,10 +10,11 @@ architecture manager_behavior of tb_manager is
 
 component Manager is 
  port(	Reset, Mode: in std_logic;
-	comp: out std_logic); --Component to activate (Maintenence or Normal)
-end component;
+	comp: out std_logic_vector(0 to 1)); --Component to activate (Maintenence or Normal)
+end component;--:= "00"
 
-signal r, m, output: std_logic;--:='0';
+signal r, m: std_logic;--:='0';
+signal output: std_logic_vector(0 to 1);
 
 begin
 
