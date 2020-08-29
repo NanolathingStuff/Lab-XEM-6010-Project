@@ -10,18 +10,18 @@ architecture lights_behavior of tb_lights is
 component Lights is 
  port(	Mode, RS, Enable, Reset: in std_logic;	-- signal from components: nominal or standby, red modulator, Enabler, reset to mod5
 	Y: in std_logic_vector(0 to 1);		-- yellow modulator
-	MaiR, MaiY,MaiG, NorR, NorY, NorG: out std_logic; --temp signal
+	MaiR, MaiY,MaiG, NorR, NorY, NorG, fi: out std_logic; --temp signal
 	setting: out std_logic_vector(0 to 1); --debug
 	outR, outY, outG: out std_logic);	--outputs
 
 end component;
 
-signal mode, red_switch, enable, reset, RED, YELLOW, GREEN, MR, MY, MG, NR, NY, NG: std_logic; --
+signal mode, red_switch, enable, reset, RED, YELLOW, GREEN, MR, MY, MG, NR, NY, NG, C_if: std_logic; --
 signal yellow_mod, set: std_logic_vector(0 to 1);
 
 begin
 
-cpt_mod: Lights port map (mode, red_switch, enable, reset, yellow_mod, MR, MY, MG, NR, NY, NG, set, RED, YELLOW, GREEN);--, ou 
+cpt_mod: Lights port map (mode, red_switch, enable, reset, yellow_mod, MR, MY, MG, NR, NY, NG, C_if, set, RED, YELLOW, GREEN);--, ou 
 
 process
 begin

@@ -7,7 +7,7 @@ use work.all;
 entity Lights is 
  port(	Mode, RS, Enable, Reset: in std_logic;	-- signal from components: nominal or standby, red modulator, Enabler, reset to mod5
 	Y: in std_logic_vector(0 to 1);		-- yellow modulator
-	MaiR, MaiY,MaiG, NorR, NorY, NorG: out std_logic; --temp signal
+	MaiR, MaiY,MaiG, NorR, NorY, NorG, fi: out std_logic; --temp signal
 	setting: out std_logic_vector(0 to 1); --debug
 	outR, outY, outG: out std_logic);	--outputs
 end Lights;
@@ -50,7 +50,7 @@ cptM1: Mod5 port map(RedS, Signal5R, MG);
 cptM2: Custom_counter port map(INP, yell, MY, MR);
 cptN: Nominal port map(NR, NY, NG);
 cptS: Standby port map(SR, SY, SG);
-cptMode: Manager port map(modN, res, set);
+cptMode: Manager port map(res, modN, set);
 -- behaviour
 RedS <= RS; --Red signal switch modulator
 INP <= Signal5R; --half-red signal
@@ -87,24 +87,31 @@ begin
 	if set = "00" or set = "11" then--maintenence
 		outR <= MR and Enable; 
 		outY <= MY and Enable;
-		outG <= MG and Enable; 
-	end if;  
-	if set = "01" then --nominal
+		outG <= MG and Enable;
+		fi <= '0';
+	else
+		outR <= (NR and Enable and not Mode) or  (SR and Enable and Mode);
+		outY <= (NY and Enable and not Mode) or  (SY and Enable and Mode);	
+		outG <= (NG and Enable and not Mode) or  (SG and Enable and Mode);
+		fi <= '1';
+	end if;
+--	if set = "01" then --nominal
 --		if mode'event then --normal	
 --	if Nom = '1' and Nom'event then 
 
-		outR <= NR and Enable; 
-		outY <= NY and Enable;	
-		outG <= NG and Enable; 	
+--		outR <= NR and Enable; 
+--		outY <= NY and Enable;	
+--		outG <= NG and Enable; 
+--	end if;	
 		--Stand <= '0'; --when one is up, the other is down: simulate button-switch	
 --		else	--start as maintenence
-	end if;
---	if Stand = '1' and Stand'event then 
-	if set = "10" then --standby
-		outG <= SG and Enable; 
-		outR <= SR and Enable; 
-		outY <= SY and Enable;
-	end if;
+	--if Stand = '1' and Stand'event then 
+--	if set = "10" then --standby
+--		outG <= SG and Enable; 
+--		outR <= SR and Enable; 
+--		outY <= SY and Enable;
+--	end if;
+ 
 --end if;
 
 end process;
