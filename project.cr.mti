@@ -48,6 +48,14 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity tb_counter
 -- Compiling architecture tb_counter_behavior of tb_counter
 
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_test.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_test.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_test
+-- Compiling architecture test_behavior of tb_test
+
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -55,6 +63,22 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package std_logic_1164
 -- Compiling entity tb_counter
 -- Compiling architecture tb_counter_behavior of tb_counter
+
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/test.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/test.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity test_lights
+-- Compiling architecture test_behavior of test_lights
+
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/encoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/encoder.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity encoder4x2
+-- Compiling architecture encoder4x2_behav of encoder4x2
 
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -74,15 +98,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity tb_Mod5
 -- Compiling architecture Mod5_Controls_behavior of tb_Mod5
 
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Compiling entity Standby
--- Compiling architecture Standby_behav of Standby
-
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -91,6 +106,15 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package std_logic_arith
 -- Compiling entity Mod5
 -- Compiling architecture mod5_behaviour of Mod5
+
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity Standby
+-- Compiling architecture Standby_behav of Standby
 
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015

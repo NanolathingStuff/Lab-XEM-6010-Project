@@ -17,6 +17,7 @@ architecture Lights_behavior of Lights is
 signal RedS, Signal5R, MG, INP, MR, MY, NR, NY, NG,SR, SY, SG: std_logic;
 signal modN, res: std_logic;
 signal yell, set: std_logic_vector(0 to 1):= "00"; --yellow modulator
+signal r1,r2, y1,y2,g1,g2 : std_logic;
 -- Components
 --component Normal is 
 
@@ -70,12 +71,19 @@ setting <= set;
 	--outG <= LG and Enable;
 --end process;
 ---DEBUG
-	MaiR <= MR and Enable; 
-	MaiY <= MY and Enable;
-	MaiG <= MG and Enable; 
-	NorR <= (NR and Enable and not Mode) or  (SR and Enable and Mode);
-	NorY <= (NY and Enable and not Mode) or  (SY and Enable and Mode);	
-	NorG <= (NG and Enable and not Mode) or  (SG and Enable and Mode);
+	MaiR <= r1;--MR and Enable; 
+	MaiY <= y1;--MY and Enable;
+	MaiG <= g1;--MG and Enable; 
+	NorR <= r2;--(NR and Enable and not Mode) or  (SR and Enable and Mode);
+	NorY <= y2;--(NY and Enable and not Mode) or  (SY and Enable and Mode);	
+	NorG <= g2;--(NG and Enable and not Mode) or  (SG and Enable and Mode);
+
+	r1 <= MR and Enable; 
+	y1 <= MY and Enable;
+	g1 <= MG and Enable; 
+	r2 <= (NR and Enable and not Mode) or  (SR and Enable and Mode);
+	y2 <= (NY and Enable and not Mode) or  (SY and Enable and Mode);	
+	g2 <= (NG and Enable and not Mode) or  (SG and Enable and Mode);
 
 
 lights: process(set)
@@ -85,14 +93,14 @@ begin
 --	if reset = '0' then
 	--if (falling_edge(Reset)) or( Nom = '0' and Stand = '0')  then
 	if set = "00" or set = "11" then--maintenence
-		outR <= MR and Enable; 
-		outY <= MY and Enable;
-		outG <= MG and Enable;
+		outR <= r1;--MR and Enable; 
+		outY <= y1;--MY and Enable;
+		outG <= g1;--MG and Enable;
 		fi <= '0';
 	else
-		outR <= (NR and Enable and not Mode) or  (SR and Enable and Mode);
-		outY <= (NY and Enable and not Mode) or  (SY and Enable and Mode);	
-		outG <= (NG and Enable and not Mode) or  (SG and Enable and Mode);
+		outR <= r2;--(NR and Enable and not Mode) or  (SR and Enable and Mode);
+		outY <= y2;--(NY and Enable and not Mode) or  (SY and Enable and Mode);	
+		outG <= g2;--(NG and Enable and not Mode) or  (SG and Enable and Mode);
 		fi <= '1';
 	end if;
 --	if set = "01" then --nominal
