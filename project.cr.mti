@@ -98,6 +98,15 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity tb_Mod5
 -- Compiling architecture Mod5_Controls_behavior of tb_Mod5
 
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity Standby
+-- Compiling architecture Standby_behav of Standby
+
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -107,14 +116,22 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity Mod5
 -- Compiling architecture mod5_behaviour of Mod5
 
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
--- Compiling entity Standby
--- Compiling architecture Standby_behav of Standby
+-- Compiling entity Nominal
+-- Compiling architecture Nominal_behav of Nominal
+
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Normal.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Normal.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_Normal
+-- Compiling architecture tb_Normal_behavior of tb_Normal
 
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/ModalityManager.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -125,22 +142,5 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity Manager
 -- Compiling architecture ConditionManager of Manager
-
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Normal.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Normal.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_Normal
--- Compiling architecture tb_Normal_behavior of tb_Normal
-
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Compiling entity Nominal
--- Compiling architecture Nominal_behav of Nominal
 
 } {} {}}
