@@ -1,18 +1,18 @@
-C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_lights
--- Compiling architecture lights_behavior of tb_lights
-
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_manager.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_manager.vhd
+C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_manager.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_manager.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity tb_manager
 -- Compiling architecture manager_behavior of tb_manager
+
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_lights.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_lights
+-- Compiling architecture lights_behavior of tb_lights
 
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/clk_generator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/clk_generator.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -80,6 +80,14 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity encoder4x2
 -- Compiling architecture encoder4x2_behav of encoder4x2
 
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_Mod5
+-- Compiling architecture Mod5_Controls_behavior of tb_Mod5
+
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -90,13 +98,14 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity Custom_counter
 -- Compiling architecture counter_behavior of Custom_counter
 
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity tb_Mod5
--- Compiling architecture Mod5_Controls_behavior of tb_Mod5
+-- Loading package std_logic_arith
+-- Compiling entity Mod5
+-- Compiling architecture mod5_behaviour of Mod5
 
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Standby.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -106,15 +115,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package std_logic_arith
 -- Compiling entity Standby
 -- Compiling architecture Standby_behav of Standby
-
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Compiling entity Mod5
--- Compiling architecture mod5_behaviour of Mod5
 
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Nominal.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015

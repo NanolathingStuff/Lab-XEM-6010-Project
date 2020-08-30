@@ -33,6 +33,11 @@ begin
 	wait for 100 ns;
 	m <= '0';
 	wait for 100 ns;
+	m <= '1';
+	r <= '0';
+	wait for 100 ns;
+	r <= '1';
+	wait for 100 ns;
 
 
 end process;

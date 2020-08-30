@@ -7,8 +7,8 @@ use work.all;
 entity Lights is 
  port(	Mode, RS, Enable, Reset: in std_logic;	-- signal from components: nominal or standby, red modulator, Enabler, reset to mod5
 	Y: in std_logic_vector(0 to 1);		-- yellow modulator
-	--MaiR, MaiY,MaiG, NorR, NorY, NorG, fi: out std_logic; --temp signal
-	--setting: out std_logic_vector(0 to 1); --debug
+--	MaiR, MaiY,MaiG, NorR, NorY, NorG, fi: out std_logic; --temp signal
+--	setting: out std_logic_vector(0 to 1); --debug
 	outR, outY, outG: out std_logic);	--outputs
 end Lights;
     
@@ -69,8 +69,6 @@ yell <= Y; --Yellow signal switch modulator
 	--outG <= LG and Enable;
 --end process;
 ---DEBUG
-	--modN <= Mode;
-	--res <= Reset; 
 	--setting <= set;
 	--MaiR <= r1;--MR and Enable; 
 	--MaiY <= y1;--MY and Enable;
@@ -78,6 +76,10 @@ yell <= Y; --Yellow signal switch modulator
 	--NorR <= r2;--(NR and Enable and not Mode) or  (SR and Enable and Mode);
 	--NorY <= y2;--(NY and Enable and not Mode) or  (SY and Enable and Mode);	
 	--NorG <= g2;--(NG and Enable and not Mode) or  (SG and Enable and Mode);
+	--fi <= set(0) xor set(1);
+
+	modN <= Mode; --Modality_manager
+	res <= Reset; 
 
 	r1 <= MR and Enable; 
 	y1 <= MY and Enable;
@@ -86,9 +88,9 @@ yell <= Y; --Yellow signal switch modulator
 	y2 <= (NY and Enable and not Mode) or  (SY and Enable and Mode);	
 	g2 <= (NG and Enable and not Mode) or  (SG and Enable and Mode);
 
-	outR <= (r2 and (set(0) xor set(1))) or(r1 and not(set(0) xor set(1)));--MR and Enable; 
-	outY <= (y2 and (set(0) xor set(1))) or(y1 and not(set(0) xor set(1)));--MY and Enable;
-	outG <= (g2 and (set(0) xor set(1))) or(g1 and not(set(0) xor set(1)));--MG and Enable;
+	outR <= (r2 and (set(0) xor set(1))) or(r1 and (not(set(0) xor set(1))));--MR and Enable; 
+	outY <= (y2 and (set(0) xor set(1))) or(y1 and (not(set(0) xor set(1))));--MY and Enable;
+	outG <= (g2 and (set(0) xor set(1))) or(g1 and (not(set(0) xor set(1))));--MG and Enable;
 
 --lights: process(set)
 	--default = Maintenence, if Mode'event --> normal

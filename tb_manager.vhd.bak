@@ -14,7 +14,7 @@ component Manager is
 end component;--:= "00"
 
 signal r, m: std_logic;--:='0';
-signal output: std_logic_vector(0 to 1;
+signal output: std_logic_vector(0 to 1);
 
 begin
 
@@ -32,6 +32,12 @@ begin
 	r <= '1';
 	wait for 100 ns;
 	m <= '0';
+	wait for 100 ns;
+	m <= '0';
+	r <= '0';
+	wait for 100 ns;
+	r <= '1';
+	m <= '1';
 	wait for 100 ns;
 
 
