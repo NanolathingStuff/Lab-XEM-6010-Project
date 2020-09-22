@@ -10,7 +10,7 @@ end test_lights;
 
 architecture test_behavior of test_lights is
 
-signal modN, RedS, res, MG, MR, MY, NR, NY, NG, mi, SR, SY, SG: std_logic;
+signal modN, RedS, enab, res, MG, MR, MY, NR, NY, NG, mi, SR, SY, SG: std_logic;
 signal yell, set: std_logic_vector(0 to 1):= "00"; --yellow modulator
 
 component Lights is 

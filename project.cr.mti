@@ -40,6 +40,16 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity Lights
 -- Compiling architecture Lights_behavior of Lights
 
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5_proper.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5_proper.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Clock_counter
+-- Compiling architecture counter_behavior of Clock_counter
+
 } {} {}} {C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter - Test.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_custom_counter - Test.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -80,14 +90,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity encoder4x2
 -- Compiling architecture encoder4x2_behav of encoder4x2
 
-} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_Mod5
--- Compiling architecture Mod5_Controls_behavior of tb_Mod5
-
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Custom_counter.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -97,6 +99,14 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity Custom_counter
 -- Compiling architecture counter_behavior of Custom_counter
+
+} {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/tb_Mod5.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_Mod5
+-- Compiling architecture Mod5_Controls_behavior of tb_Mod5
 
 } {} {}} C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/silva/Desktop/Lab-XEM-6010-Project/Mod5.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015

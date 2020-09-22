@@ -132,10 +132,8 @@ yell <= Y; --Yellow signal switch modulator
 
 
 end Lights_behavior;
-
 -- 1 entità --> 1 arhitettura
 
--- CONTINUA DA LEZIONE 8.2 ore 0:00
 -- Come aprire compilatore ?
 	-- file -> new -> project: apre nuovo progetto
 	-- add files tramite finestra di dialogo
@@ -164,3 +162,4 @@ end Lights_behavior;
 -- 
 ---components: hb_halfadder, VHDL_exercise1.pdf
 	
+

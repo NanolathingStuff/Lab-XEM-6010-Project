@@ -38,3 +38,35 @@ outG <= (MG and enab and not mi) or (NG and enab and not Mode) or  (SG and enab 
 
 
 end test_behavior;
+
+-- 1 entità --> 1 arhitettura
+
+-- CONTINUA DA LEZIONE 8.2 ore 0:00
+-- Come aprire compilatore ?
+	-- file -> new -> project: apre nuovo progetto
+	-- add files tramite finestra di dialogo
+-- simulate, in folder "Work" = entità compilate
+	-- simulate -> start simulation -> seleziona entità compilata da simulare
+	-- se fatto tutto bene, risulta in cartella work.
+-- alcune non simulano, vedi testMyComp2 come esempio che funge
+-- right click on test --> add wave to simulate
+-- remi tasto di fiano ns per fare plotting
+
+-- label : entità port map(collega segnali a entità dichiarat)e
+-- ogni componente ha entità ed architettura
+-- usa chiave "generic" per generalizzare (global var)
+-- usa enable/reset dove possibile
+-- if else permesso, usato su un fornte
+-- entità: simbolo e ports; architettura: algoritmo circuito.
+-- se ti servono componenti che hai definito altrove, usi component
+-- Sintassi:
+	-- entity NOME ENTITà is(
+	-- [generics, ports, declarations]
+	-- [begin STATEMENT]);
+	-- end NOME ENTITÃ;
+	-- architecture NOME of NOME ENTITÃ is
+	-- begin ALGORITMO;
+	-- end NOME;
+-- 
+---components: hb_halfadder, VHDL_exercise1.pdf
+	
